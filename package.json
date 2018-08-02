@@ -1,0 +1,14 @@
+{
+  "name": "trello",
+  "version": "0.0.1",
+  "description": "replica de trello",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "trello"
+  ],
+  "author": "karyn herrera",
+  "license": "ISC"
+}
