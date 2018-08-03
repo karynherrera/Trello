@@ -35,11 +35,17 @@
               <i class="fab fa-trello space"></i> Tableros</button>
           </div>
           <div class="col">
-            <input class="form-control mr-sm-2 space" type="search" placeholder="search" aria-label="Search">
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control "   aria-describedby="basic-addon2">
+                    <span class="input-group-text input-group-append search"><i class="fas fa-search"></i></span>
+                </div>
           </div>
           <div class="col">
             <input class="txtTrello">
           </div>
+          <div class="col">
+              <input class="txtTrello">
+            </div>
           <div class="col">
               <img src="./src/img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
           </div>
@@ -66,14 +72,26 @@
   </nav>
   <!-- Nombre del Tablero -->
   <div class="row justify-content-center fila" >
-          <div class=" col col-3 "><h5>Tablero-Reto del Codigo</h5>
-            
+          <div class=" col col-3">
+            <div class="col col-2 celda">
+                <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
+                    <h5>Tablero-Reto del Codigo</h5>
+                  </button>
+                  <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="col col-2 celda">
+              <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
+                  <h6>|Personal</h6>
+                </button>
+                <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
+                    <i class="fas fa-lock"></i>
+                  </button>
           </div>
           <div class="col col-2 ">hola</div>
           <div class="col col-2 ">hola</div>
-          <div class="col col-2 ">hola</div>
-          <div class="col col-2 col-offset-2"></div>
-          <div class="col col-1 ">hola</div> 
+          <div class="col col-3 col-offset-2"></div>
+         
   </div>
   <!-- Vinculación Jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

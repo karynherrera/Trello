@@ -16,6 +16,7 @@
   color: #ffffff;
   border: 0;
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .btnTablero:hover{
   background-color:#ffffff;
@@ -58,6 +59,7 @@ btnLeft{
 }
 h5{
   color: #62013B;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .col{
   text-align: left;
@@ -66,6 +68,9 @@ h5{
 .col{
   text-align: left;
   /*border: #333333 solid 2px;*/
+  border: #333333 solid 2px;
+  margin: 0%;
+  padding: 0%;
 }
 #logo{
   width: 70%;
@@ -75,3 +80,30 @@ h5{
   margin-top: 3px;
   border-left: 0;
 }
+
+#tinySpace{
+  padding: 5%;
+}
+.btnFake{
+  background-color: rgb(238, 211, 227);
+  color:  #62013B;
+  cursor: pointer;
+}
+.btnFake:hover{
+  background-color: rgb(201, 168, 188);
+  color:  rgb(238, 211, 227);
+  border-radius: 5px;}
+
+  .celda{
+    display: inline;
+    color:  #62013B;
+    cursor: pointer;
+  }
+
+  .search{
+    background-color: white;
+    color:  #62013B;
+    border: 0px;
+    border-color:  white solid;
+    cursor: pointer;
+  }
