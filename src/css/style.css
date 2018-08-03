@@ -1,0 +1,56 @@
+
+#navPrincipal{
+  background-color: #62013B;
+  color: #ffffff;
+}
+
+.space{
+  margin: 2%;
+}
+
+#navbarSupportedContent{
+  display: inline;
+}
+.btnTablero{
+  background-color: #62013B;
+  color: #ffffff;
+  border: 0;
+  font-size: 20px;
+}
+.btnTablero:hover{
+  background-color:#ffffff;
+  color: #62013B;
+}
+.btn{
+  background-color: #62013B;
+  color: #ffffff;
+  border: 0;
+}
+body{
+  background-color: rgb(238, 211, 227);
+}
+btnLeft{
+  text-align: left;
+  background-color: #62013B;
+  color: #ffffff;
+  border: 0;
+  margin: 1px;
+  width: 5%;
+  padding: 0;
+}
+
+.btnLeft:hover{
+  background-color:#ffffff;
+  color: #62013B;
+}
+
+.txtTrello{
+  width: 50px;
+  background-color: #62013B;
+  border: none;
+  width: 100%;
+}
+
+h3{
+  color: #62013B;
+}
