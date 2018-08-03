@@ -50,7 +50,28 @@ btnLeft{
   border: none;
   width: 100%;
 }
-
-h3{
+.spaceTablero{
+  width: 50px;
+  background-color: rgb(238, 211, 227);
+  border: none;
+  width: 100%;
+}
+h5{
   color: #62013B;
+}
+.col{
+  text-align: left;
+ /*border: #333333 solid 2px; */
+}
+.col{
+  text-align: left;
+  /*border: #333333 solid 2px;*/
+}
+#logo{
+  width: 70%;
+}
+.fila{
+  margin-left: 0px;
+  margin-top: 3px;
+  border-left: 0;
 }
