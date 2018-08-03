@@ -81,7 +81,7 @@ h5{
   border-left: 0;
 }
 
-#tinySpace{
+.tinySpace{
   padding: 5%;
 }
 .btnFake{
@@ -92,7 +92,8 @@ h5{
 .btnFake:hover{
   background-color: rgb(201, 168, 188);
   color:  rgb(238, 211, 227);
-  border-radius: 5px;}
+  border-radius: 5px;
+}
 
   .celda{
     display: inline;
@@ -103,7 +104,28 @@ h5{
   .search{
     background-color: white;
     color:  #62013B;
-    border: 0px;
-    border-color:  white solid;
+    border: none;
+    border-color:  white solid solid 2px;
+    border-width: 0px;
+    border-style: none;
     cursor: pointer;
+  }
+
+ #user{
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 20px;
+  height: 30px;
+  }
+  #btnUser{
+    background-color: white;
+    color:  #62013B;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  #btnUser:hover{
+    background-color: #62013B;
+    color:  rgb(238, 211, 227);
+    border-radius: 50%;
   }
