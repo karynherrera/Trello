@@ -76,29 +76,42 @@
   <div class="row justify-content-center fila">
     <div class=" col col-3">
       <div class="col  col-2 celda">
-        <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
+        <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnFake" type="button">
           <h5>Tablero-Reto del Codigo</h5>
         </button>
-        <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
+        <button class="btn btn-outline-success m-0 p-0 my-2 space btnFake" type="button">
           <i class="far fa-star"></i>
         </button>
       </div>
+      <div class="col col-1 celda my-10">
+          <button class="btn btn-outline-success  p-0 my-sm-0  m-2 space btnFake" type="button">
+              <h6>|Personal</h6>
+            </button>
+      </div>
     </div>
     <div class="col col-3 celda">
-      <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
-        <h6>|Personal</h6>
-      </button>
-      <button class="btn btn-outline-success my-2 my-sm-0 space btnFake" type="button">
+      <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnFake" type="button">
         <h6><i class="fas fa-lock"></i> |Privado</h6>
       </button>
       <button class="btn btn-outline-success my-2 my-sm-0 space "id="btnUser" type="button">
           <div ><i class="fas fa-user-plus"></i></div>
         </button>
     </div>
-    <div class="col col-1 ">hola</div>
-    <div class="col col-2 ">hola</div>
-    <div class="col col-3 col-offset-2"></div>
-
+    
+    <div class="col col-4 col-offset-2"></div>
+    <div class="col col-2 "><button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnFake" type="button">
+      <h6>...Mostrar Menú</h6>
+    </button>
+    </div>
+  </div>
+  <!-- Tablero -->
+  <div class="flex-row justify-content-center fila">
+      <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnFake" id="btnAñadirL" type="button">
+          <h6 class="m-0 p-0"><i class="fas fa-plus space"></i>Añadir Lista...</h6>
+        </button>
+  </div>
+  <div class="flex-row justify-content-center fila">
+      <div id="tarjeta"></div>
   </div>
   <!-- Vinculación Jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
