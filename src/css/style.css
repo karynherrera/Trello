@@ -1,7 +1,8 @@
 
 #navPrincipal{
-  background-color: #62013B;
+  background-color: #147AA7;
   color: #ffffff;
+  
 }
 
 .space{
@@ -12,7 +13,7 @@
   display: inline;
 }
 .btnTablero{
-  background-color: #62013B;
+  background-color: #969EBD;
   color: #ffffff;
   border: 0;
   font-size: 20px;
@@ -20,19 +21,19 @@
 }
 .btnTablero:hover{
   background-color:#ffffff;
-  color: #62013B;
+  color: #969EBD;
 }
 .btn{
-  background-color: #62013B;
+  background-color: #147AA7;
   color: #ffffff;
   border: 0;
 }
 body{
-  background-color: rgb(238, 211, 227);
+  background-color: #969EBD;
 }
 btnLeft{
   text-align: left;
-  background-color: #62013B;
+  background-color: #147AA7;
   color: #ffffff;
   border: 0;
   margin: 1px;
@@ -42,24 +43,27 @@ btnLeft{
 
 .btnLeft:hover{
   background-color:#ffffff;
-  color: #62013B;
+  color: #969EBD;
 }
 
 .txtTrello{
   width: 50px;
-  background-color: #62013B;
+  background-color:  #147AA7;
   border: none;
   width: 100%;
 }
 .spaceTablero{
   width: 50px;
-  background-color: rgb(238, 211, 227);
+  background-color:  #147AA7;
   border: none;
   width: 100%;
 }
 h5{
-  color: #62013B;
+  text-align: center;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 3px;
 }
 .col{
   text-align: left;
@@ -85,25 +89,25 @@ h5{
   padding: 5%;
 }
 .btnFake{
-  background-color: rgb(238, 211, 227);
-  color:  #62013B;
+  background-color: #969EBD;
+  color:   white;
   cursor: pointer;
 }
 .btnFake:hover{
-  background-color: rgb(201, 168, 188);
-  color:  rgb(238, 211, 227);
+  background-color: #147AA7;
+  color: #ffffff;
   border-radius: 5px;
 }
 
   .celda{
     display: inline;
-    color:  #62013B;
+    color:  #ffffff;
     cursor: pointer;
   }
 
   .search{
     background-color: white;
-    color:  #62013B;
+    color:  #969EBD;
     border: none;
     border-color:  white solid solid 2px;
     border-width: 0px;
@@ -120,12 +124,18 @@ h5{
   }
   #btnUser{
     background-color: white;
-    color:  #62013B;
+    color:  #969EBD;
     cursor: pointer;
     border-radius: 50%;
   }
   #btnUser:hover{
-    background-color: #62013B;
-    color:  rgb(238, 211, 227);
+    background-color: #147AA7;
+    color:  #ffffff;
     border-radius: 50%;
+  }
+
+ .card{
+    width: 20%;
+    background-color: rgb(179, 76, 137);
+    border: 3px solid rgb(179, 76, 137);
   }
