@@ -1,6 +1,6 @@
 
 #navPrincipal{
-  background-color: #147AA7;
+  background-color: #0067A3;
   color: #ffffff;
 }
 
@@ -23,7 +23,7 @@
   color: #969EBD;
 }
 .btn{
-  background-color: #147AA7;
+  background-color: #0067A3;
   color: #ffffff;
   border: 0;
 }
@@ -46,11 +46,11 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 body{
-  background-color: #969EBD;
+  background-color: #0079BF;
 }
 btnLeft{
   text-align: left;
-  background-color: #147AA7;
+  background-color: #0067A3;
   color: #ffffff;
   border: 0;
   margin: 1px;
@@ -65,17 +65,18 @@ btnLeft{
 
 .txtTrello{
   width: 50px;
-  background-color:  #147AA7;
+  background-color:  #0067A3;
   border: none;
   width: 100%;
 }
 .spaceTablero{
   width: 50px;
-  background-color:  #147AA7;
+  background-color:  #0067A3;
   border: none;
   width: 100%;
 }
 h5{
+  
   text-align: center;
   color: #1A231C;
   font-family: Arial, Helvetica, sans-serif;
@@ -116,7 +117,7 @@ h5{
 .btnFake{
   width: 20%;
   text-align: left;
-  background-color: #969EBD;
+  background-color: #0067A3;
   color:   white;
   cursor: pointer;
 }
@@ -127,7 +128,7 @@ h5{
 }
 
 .btnMedioTablero{
-  background-color: #969EBD;
+  background-color: #0079BF;
   color:   #1A231C;
   cursor: pointer;
 }
@@ -201,4 +202,15 @@ h5{
   border: none;
   border-color: #E2E4E6;
   resize:none;
+}
+
+.tituloCard{
+  text-align: right;
+ padding-right: 50%;
+}
+#spaceCard{
+  text-align: left;
+  position: relative;
+  right: 0px;
+  background-color: #E2E4E7;
 }

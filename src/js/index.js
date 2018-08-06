@@ -22,8 +22,7 @@ const card = (nameList) => {
 
 const createCard = () => {
   const divCard = document.getElementById("addCard");
-  divCard.innerHTML = `<div id="addCard"><textarea id="inputCard" placeholder="Titulo de la Tarjeta..">
-  </textarea>
+  divCard.innerHTML = `<div id="addCard"><textarea id="inputCard" placeholder="Titulo de la Tarjeta..."></textarea>
   <button type="button" class=" btn-primary btnForm">Añadir Tarjeta</button><button type="button" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   </div>`;
 }
