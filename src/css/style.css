@@ -2,7 +2,6 @@
 #navPrincipal{
   background-color: #147AA7;
   color: #ffffff;
-  
 }
 
 .space{
@@ -108,11 +107,13 @@ h5{
   .search{
     background-color: white;
     color:  #969EBD;
-    border: none;
-    border-color:  white solid solid 2px;
-    border-width: 0px;
+    border-color: white;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
     border-style: none;
     cursor: pointer;
+    align-items: center;
+    padding: .375rem .75rem;
   }
 
  #user{
