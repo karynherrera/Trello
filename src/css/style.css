@@ -27,6 +27,22 @@
   color: #ffffff;
   border: 0;
 }
+.btnForm{
+  background-color:#5AAC44;
+  color: #ffffff;
+  border: 0;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 body{
   background-color: #969EBD;
 }
@@ -145,8 +161,8 @@ h5{
 
  .card{
     width: 20%;
-    background-color: rgb(179, 76, 137);
-    border: 3px solid rgb(179, 76, 137);
+    background-color: #E2E4E6;
+    border: 5px solid #E2E4E6;
   }
 
   #tarjetaNew{
@@ -162,4 +178,12 @@ h5{
   background-color: white ;
   color: #147AA7;
   border-radius: 5px;
+}
+#inputCard{
+  width: 100%;
+  height: 200%;
+  background-color: white;
+  border: none;
+  border-color: #E2E4E6;
+  resize:none;
 }
