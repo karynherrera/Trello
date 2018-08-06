@@ -214,3 +214,8 @@ h5{
   right: 0px;
   background-color: #E2E4E7;
 }
+
+.move{
+  position: relative;
+  left: 20%;
+}
