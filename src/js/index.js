@@ -2,7 +2,7 @@
 const btnAñadirLista = document.getElementById("btnAñadirL");
 const divLista = document.getElementById("tarjeta");
 btnAñadirLista.addEventListener('click', () => {
-  divLista.innerHTML = '<div class="card"><div class="form-group"><input id="inputList" type="text" class="form-control" placeholder="Añadir una Lista"><button type="button" class="btnForm btn-primary" onclick="getInfoList()" >Añadir</button></form></div>';
+  divLista.innerHTML = '<div class="card"><div class="form-group"><input id="inputList" type="text" class="form-control" placeholder="Añadir una Lista"><button type="button" class="btnForm btn-primary" onclick="getInfoList()" >Añadir Lista</button><button type="button" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button></div></div>';
   btnAñadirLista.style.display = "none";
 });
 
@@ -24,6 +24,10 @@ const createCard = () => {
   const divCard = document.getElementById("addCard");
   divCard.innerHTML = `<div id="addCard"><textarea id="inputCard" placeholder="Titulo de la Tarjeta..">
   </textarea>
-  <button type="button" class=" btn-primary btnForm">Añadir Tarjeta</button>
+  <button type="button" class=" btn-primary btnForm">Añadir Tarjeta</button><button type="button" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   </div>`;
+}
+
+const close = () => {
+  divLista.innerHTML ='<div></div>';
 }

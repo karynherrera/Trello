@@ -28,12 +28,14 @@
   border: 0;
 }
 .btnForm{
+  margin-top: 2%;
+  margin-right: 0;
   background-color:#5AAC44;
   color: #ffffff;
   border: 0;
   display: inline-block;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
@@ -41,7 +43,7 @@
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 body{
   background-color: #969EBD;
@@ -75,7 +77,7 @@ btnLeft{
 }
 h5{
   text-align: center;
-  color: white;
+  color: #1A231C;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   top: 3px;
@@ -100,7 +102,20 @@ h5{
 .tinySpace{
   padding: 5%;
 }
+.btnCerrar{
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 10%;
+  text-align: right;
+  vertical-align: middle;
+  background-color:  #E2E4E6;
+  color:   #969EBD;
+  cursor: pointer;
+  border: none;
+}
 .btnFake{
+  width: 20%;
+  text-align: left;
   background-color: #969EBD;
   color:   white;
   cursor: pointer;
@@ -113,11 +128,11 @@ h5{
 
 .btnMedioTablero{
   background-color: #969EBD;
-  color:   white;
+  color:   #1A231C;
   cursor: pointer;
 }
 .btnMedioTablero:hover{
-  background-color:  #147AA7;
+  background-color: #AFA9AF;
   color: white;
   border-radius: 5px;
 }
