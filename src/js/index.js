@@ -36,8 +36,9 @@ const createCard = () => {
 const newCards = (name) => {
   const newCard = document.getElementById("cards");
   const titleCard=document.getElementById("inputCard");
-  newCard.innerHTML = `<div class="cards"><p>${titleCard.value}</p></div>`;
+  newCard.innerHTML += `<div><p>${titleCard.value}</p></div>`;
   titleCard.value="";
+  inputCard.focus();
 }
 
 const close = () => {
