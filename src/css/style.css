@@ -64,10 +64,7 @@ h5{
   position: relative;
   top: 3px;
 }
-.col{
-  text-align: left;
- /*border: #333333 solid 2px; */
-}
+
 .col{
   text-align: left;
   /*border: #333333 solid 2px;*/
@@ -93,8 +90,19 @@ h5{
   cursor: pointer;
 }
 .btnFake:hover{
-  background-color: #147AA7;
-  color: #ffffff;
+  background-color: white ;
+  color: #147AA7;
+  border-radius: 5px;
+}
+
+.btnMedioTablero{
+  background-color: #969EBD;
+  color:   white;
+  cursor: pointer;
+}
+.btnMedioTablero:hover{
+  background-color:  #147AA7;
+  color: white;
   border-radius: 5px;
 }
 
@@ -130,8 +138,8 @@ h5{
     border-radius: 50%;
   }
   #btnUser:hover{
-    background-color: #147AA7;
-    color:  #ffffff;
+    background-color: white;
+    color:  #147AA7;
     border-radius: 50%;
   }
 
@@ -140,3 +148,18 @@ h5{
     background-color: rgb(179, 76, 137);
     border: 3px solid rgb(179, 76, 137);
   }
+
+  #tarjetaNew{
+    background-color: #E2E4E6;
+  }
+
+  .btnCard{
+  background-color: #E2E4E6;
+  color: #147AA7;
+  cursor: pointer;
+}
+.btnCard:hover{
+  background-color: white ;
+  color: #147AA7;
+  border-radius: 5px;
+}

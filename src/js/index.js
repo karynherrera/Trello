@@ -7,12 +7,15 @@ const divLista = document.getElementById("tarjeta");
  });
 
  const getInfoList = () => {
-  let listName=document.getElementById(inputList.value);
-  if(inputList.value===""){
-    console.log("Input Vacio");
+  let listName = document.getElementById(inputList.value);
+  if(inputList.value === ""){
     }else{
-    console.log("Input lleno");
     addToList(inputList.value);
   }
-  
  };
+
+ const card = (nameList) => { 
+  divLista.innerHTML=`<div class="card"><div class="form-group" id="tarjetaNew"><strong><p>${nameList}</p></strong><button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnCard"  type="button">
+  <h6 class="m-0 p-0"><i class="fas fa-plus space"></i>Añadir Tarjeta...</h6>
+</button></form></div>`;
+ }
