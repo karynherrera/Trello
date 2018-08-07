@@ -2,7 +2,7 @@
 const btnAñadirLista = document.getElementById("btnAñadirL");
 const divLista = document.getElementById("tarjeta");
 btnAñadirLista.addEventListener('click', () => {
-  divLista.innerHTML = '<div class="card"><div class="form-group"><input id="inputList" type="text" class="form-control" placeholder="Añadir una Lista"><button type="button" class="btnForm btn-primary" onclick="getInfoList()" >Añadir Lista</button><button type="button" class="btnCerrar btn-primary" onclick="close()"><i class="fas fa-times"></i></button></div></div>';
+  divLista.innerHTML = '<div class="card"><div class="form-group"><input id="inputList" type="text" class="form-control" placeholder="Añadir una Lista" onclick="activate()"><button id="btnLista"  type="button" class="btnForm btn-primary" onclick="getInfoList()" >Añadir Lista</button><button type="button" class="btnCerrar btn-primary" onclick="close()"><i class="fas fa-times"></i></button></div></div>';
   btnAñadirLista.style.display = "none";
   //btnAñadirLista.style.position='20%';
   //btnAñadirLista.classList.add("move");
@@ -11,10 +11,17 @@ btnAñadirLista.addEventListener('click', () => {
   //btnAñadirLista.style.display = "block";
 });
 
+const activate=()=>{
+  btnLista.disabled=false;
+}
+
 const getInfoList = () => {
   let listName = document.getElementById(inputList.value);
   if (inputList.value === "") {
+    btnLista.disabled=true;
+    inputList.focus();
   } else {
+    btnLista.disabled=false;
     addToList(inputList.value);
   }
 };
@@ -34,9 +41,9 @@ const createCard = () => {
 }
 
 const activar=()=>{
-  btnAddCard.disabled=false;
-  
+  btnAddCard.disabled=false; 
 }
+
 const getInfoCards = () => {
   let listName = document.getElementById(inputCard.value);
   if (inputCard.value === "") {
