@@ -27,21 +27,36 @@ const card = (nameList) => {
 
 const createCard = () => {
   const divCard = document.getElementById("addCard");
-  divCard.innerHTML = `<div id="addCard"><textarea id="inputCard" placeholder="Titulo de la Tarjeta..."></textarea>
-  <button type="button" class=" btn-primary btnForm" onclick="newCards()">Añadir Tarjeta</button><button type="button" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
+  divCard.innerHTML = `<div id="addCard"><textarea id="inputCard" placeholder="Titulo de la Tarjeta..." onclick="activar()"></textarea>
+  <button id="btnAddCard" type="button" class=" btn-primary btnForm" onclick="getInfoCards()">Añadir Tarjeta</button><button type="button" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   </div>`;
   inputCard.focus();
 }
 
+const activar=()=>{
+  btnAddCard.disabled=false;
+  
+}
+const getInfoCards = () => {
+  let listName = document.getElementById(inputCard.value);
+  if (inputCard.value === "") {
+    btnAddCard.disabled=true;
+    inputCard.focus();
+  } else {
+    btnAddCard.disabled=false;
+    addToCards(inputCard.value);
+  }
+};
+
 const newCards = (name) => {
   const newCard = document.getElementById("cards");
   const titleCard=document.getElementById("inputCard");
-  newCard.innerHTML += `<div><p>${titleCard.value}</p></div>`;
+  newCard.innerHTML += `<div><p>${name}</p></div>`;
   titleCard.value="";
   inputCard.focus();
 }
 
 const close = () => {
-  divLista.innerHTML = '<div class="card"></div>';
+  divLista.innerHTML = '<div class="tarjeta"></div>';
   //btnAñadirLista.style.display = "block";
 }
