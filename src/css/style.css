@@ -176,6 +176,7 @@ h5{
   }
 
  .card{
+    float:left;
     width: 20%;
     background-color: #E2E4E6;
     border: 5px solid #E2E4E6;
@@ -195,7 +196,7 @@ h5{
   color: #147AA7;
   border-radius: 5px;
 }
-#inputCard{
+.inputCard{
   width: 100%;
   height: 200%;
   background-color: white;
@@ -216,6 +217,7 @@ h5{
 }
 
 .move{
+  display: none;
   position: relative;
   left: 20%;
 }
