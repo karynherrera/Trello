@@ -2,6 +2,7 @@ let countList = 0;
 let countCard=0;
 const btnAñadirLista = document.getElementById("btnAñadirL");
 const divLista = document.getElementById("tarjeta");
+
 btnAñadirLista.addEventListener('click', () => {
   console.log("creamos lista1");
   btnAñadirLista.style.display="none";
@@ -9,27 +10,41 @@ btnAñadirLista.addEventListener('click', () => {
 });
 
 const showList=()=>{
+  //divLista.style.display="none";
   countList=countList+1;
   inputListId = "input"+countList;
   btnListaId = "btnLista"+countList;
-  divLista.innerHTML = `<section class="card">
+  btnAddId ="addId"+countList;
+  IdCard ="card"+countList;
+  divLista.innerHTML += `<section id="${IdCard}" class="card">
   <div class="form-group"><input id="${inputListId}" type="text" class="form-control" placeholder="Añadir una Lista" autofocus="autofocus">
   <button id="${btnListaId}" type="button" class="btnForm btn-primary" onclick="getInfoList()" >Añadir Lista
   </button>
-  <button type="button" class="btnCerrar btn-primary">
+  <button type="button" onclick="close()" class="btnCerrar btn-primary">
   <i class="fas fa-times">
   </i>
   </button> 
   </div>
-  </section>`;
+  </section>
+  <button id="${btnAddId}" class="btn-outline-success m-0 my-2 my-sm-0 mx-2 space btnFake " type="button" onclick="clean()">
+  <h7 class="m-0 p-0"><i class="fas fa-plus space"></i>Añada Otra Lista...</h7>
+</button>`;
   return(0);
 };
+
+const clean=()=>{
+  const btnAdd = document.getElementById(btnAddId);
+  btnAdd.style.display="none";
+  showList();
+}
 
 const activate=()=>{
   btnListaId.disabled=false;
 }
 
 const getInfoList = () => {
+  const cardVacia = document.getElementById(IdCard);
+  cardVacia.style.display="none";
   const inputList = document.getElementById(inputListId);
   if (inputList.value === "") {
     btnListaId.disabled=true;
@@ -55,7 +70,7 @@ const createCard = () => {
   btnAddCardId = "btnAddCard"+countCard;
   const divCard = document.getElementById(addCardId);
   divCard.innerHTML = `<textarea class="inputCard" id="${inputCardId}" placeholder="Titulo de la Tarjeta..." onclick="activar()" autofocus="autofocus"></textarea>
-  <button id="${btnAddCardId}" type="button" class=" btn-primary btnForm" onclick="getInfoCards()">Añadir Tarjeta</button><button type="button" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
+  <button id="${btnAddCardId}" type="button" class=" btn-primary btnForm" onclick="getInfoCards()">Añadir Tarjeta</button><button type="button" onclick="close()" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   `;
   
 }
@@ -81,4 +96,9 @@ const newCards = (name) => {
   newCard.innerHTML += `<div><p class="tarea">${name}</p></div>`;
   titleCard.value="";
   titleCard.focus();
+}
+
+const close = () => {
+  divLista.style.display="none";
+  btnAñadirLista.style.display="block";
 }
