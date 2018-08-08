@@ -16,11 +16,13 @@ const showList=()=>{
   btnListaId = "btnLista"+countList;
   btnAddId ="addId"+countList;
   IdCard ="card"+countList;
-  divLista.innerHTML += `<section id="${IdCard}" class="card">
+  btnCloseId ="card"+countList;
+ 
+  divLista.innerHTML += `<section id="${IdCard}" class="card show">
   <div class="form-group"><input id="${inputListId}" type="text" class="form-control" placeholder="Añadir una Lista" autofocus="autofocus">
   <button id="${btnListaId}" type="button" class="btnForm btn-primary" onclick="getInfoList()" >Añadir Lista
   </button>
-  <button type="button" onclick="close()" class="btnCerrar btn-primary">
+  <button id="${btnCloseId}" type="button"  class="btnCerrar btn-primary" >
   <i class="fas fa-times">
   </i>
   </button> 
@@ -29,6 +31,10 @@ const showList=()=>{
   <button id="${btnAddId}" class="btn-outline-success m-0 my-2 my-sm-0 mx-2 space btnFake " type="button" onclick="clean()">
   <h7 class="m-0 p-0"><i class="fas fa-plus space"></i>Añada Otra Lista...</h7>
 </button>`;
+const btn = document.getElementById(btnCloseId);
+btn.addEventListener('onclick',()=>{
+  close();
+ });
   return(0);
 };
 
@@ -80,6 +86,7 @@ const activar=()=>{
 }
 
 const getInfoCards = () => {
+  
   let inputCard = document.getElementById(inputCardId);
   if (inputCard.value === "") {
     btnAddCardId.disabled=true;
@@ -98,7 +105,13 @@ const newCards = (name) => {
   titleCard.focus();
 }
 
+
+
+
 const close = () => {
-  divLista.style.display="none";
-  btnAñadirLista.style.display="block";
+  console.log("holi");
+  const newCard = document.getElementById(IdCard);
+  newCard.classList.remove('show');
+  newCard.classList.add('disappear');
+  console.log(IdCard);
 }
