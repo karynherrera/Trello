@@ -33,6 +33,7 @@
   text-align: center;
   padding: none;
   left: 2%;
+  margin: 2px;
 }
 
 #bell{
@@ -66,6 +67,9 @@ btnLeft{
   vertical-align: middle;
   font-size: 14px;
   float: right;
+  margin-right:5px;
+  padding-right: 2px;
+  align-items: center;
 }
 
 .btnLeft:hover{
@@ -97,18 +101,21 @@ h5{
 
 .col{
   text-align: center;
+  vertical-align: middle;
   /*border: #333333 solid 2px;*/
   
   margin: 0%;
   padding: 0%;
 }
 
+.fila{
+ 
+}
+
 #iconsLeft{
   float: right;
-  position: absolute;
-  left: 100%; 
-  display: inline;
-  padding-left: 100%;
+  text-align: left;
+  padding-left: 43%;
 }
 
 #headIcons{
@@ -123,7 +130,7 @@ h5{
   text-align: center;
   height: 30px;
   opacity: 0.5;
-  padding-left: 50%;
+  padding-left: 40%;
 }
 .fila{
   margin-left: 8px;
@@ -297,6 +304,10 @@ h6{
   display: inline-block;
   top:2%;
   font-size: 110%;
+}
+
+.fa-lock{
+  font-size: 70%;
 }
 
 #readMore{
