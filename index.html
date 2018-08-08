@@ -1,113 +1,105 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Vinculación Hojas de Estilo Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Muli|Raleway" rel="stylesheet">
-  <!--Vinculación Hojas de Estilo fuentes e Iconos-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
-  <!--Vinculación Hojas de Estilo Propias-->
-  <link rel="stylesheet" href="./src/css/style.css">
-  <title>TRELLO</title>
-</head>
-
-<body>
-  <!--Barra de navegación principal-->
-  <nav class="navbar navbar-expand-lg navbar-light" id="navPrincipal">
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="form-inline my-2 my-lg-0">
-        <div class="row justify-content-center">
-          <div class=" col col-12 d-flex">
-           
-                <button class="btn btn-outline-success my-2 my-sm-0 space btnTablero" type="button">
-                    <i class="fab fa-trello space"></i> Tableros</button>
-                  <div class="input-group">
-                      <span id="headIcons">
-                    <input id="inputBuscar" type="text" class="form-control" aria-describedby="basic-addon2">
-                    <span class=" input-group-append search">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
-            </span>
-            
-            <img src="./src/img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
-
-            <span class="d-flex" id="iconsLeft">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Vinculación Hojas de Estilo Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli|Raleway" rel="stylesheet">
+    <!--Vinculación Hojas de Estilo fuentes e Iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous">
+    <!--Vinculación Hojas de Estilo Propias-->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>TRELLO</title>
+  </head>
+  <body>
+    <!--Barra de navegación principal-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navPrincipal">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="row justify-content-center">
+            <div class=" col col-12 d-flex">
+              <button class="btn btn-outline-success my-2 my-sm-0 space btnTablero" type="button">
+              <i class="fab fa-trello space"></i> Tableros</button>
+              <div class="input-group">
+                <span id="headIcons">
+                <input id="inputBuscar" type="text" class="form-control" aria-describedby="basic-addon2">
+                <span class=" input-group-append search">
+                <i class="fas fa-search"></i>
+                </span>
+              </div>
+              </span>
+              <img src="./src/img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
+              <span class="d-flex" id="iconsLeft">
               <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button">
-                <i class="fas fa-plus"></i>
+              <i class="fas fa-plus"></i>
               </button>
               <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button">
-                <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
               </button>
               <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button" id="bell">
-                <i class="far fa-bell"></i>
+              <i class="far fa-bell"></i>
               </button>
-            </span> 
+              </span> 
+            </div>
           </div>
-          </div>
-        </div>
+      </div>
       </form>
-    </div>
-  </nav>
-  <!-- Nombre del Tablero -->
-  <div class="row justify-content-center fila">
-    <div class=" col col-3">
-      <div class="col  col-2 celda">
+      </div>
+    </nav>
+    <!-- Nombre del Tablero -->
+    <div class="row justify-content-center fila">
+      <div class=" col col-12  d-flex">
+
         <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
           <h5>Tablero-Reto del Codigo</h5>
         </button>
-        <button class="btn btn-outline-success m-0 p-0 my-2 space btnMedioTablero" type="button">
-          <i class="far fa-star"></i>
-        </button>
-      </div>
-      <div class="col col-1 celda my-10">
-          <button class="btn btn-outline-success  p-0 my-sm-0  m-2 space btnMedioTablero" type="button">
-              <h6>|Personal</h6>
-            </button>
-      </div>
-    </div>
-    <div class="col col-3 celda">
-      <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
-        <h6><i class="fas fa-lock"></i> |Privado</h6>
-      </button>
-      <button class="btn-outline-success my-2 my-sm-0 space" id="btnUser" type="button">
-        <i class="fas fa-user-plus"></i>
-      </button>
-    </div>
-    
-    <div class="col col-4 col-offset-2"></div>
-    <div class="col col-2 "><button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
-      <h6>...Mostrar Menú</h6>
-    </button>
-    </div>
-  </div>
-  <!-- Tablero -->
-  <div class="flex-row justify-content-center fila">
-      <button class="btn-outline-success m-0 my-2 my-sm-0 space btnFake" id="btnAñadirL" type="button">
-          <h7 class="m-0 p-0"><i class="fas fa-plus space"></i>Añadir Lista...</h7>
-        </button>
-        <div id="tarjeta"></div>  
-  </div>
-  <!-- Vinculación Jquery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <!--Vinculación archivos JS-->
-  <script src="./src/js/pruebas.js"></script>
-  <script src="./src/js/data.js"></script>
-</body>
 
+        <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
+        <i class="far fa-star" id="estrella"></i>
+        </button>
+        <button class="btn btn-outline-success  p-0 my-sm-0  m-2 space btnMedioTablero" type="button">
+          <h6>|Personal</h6>
+        </button>
+        <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
+          <h6><i class="fas fa-lock"></i> |Privado</h6>
+        </button>
+        <button class="btn-outline-success my-2 my-sm-0 space" id="btnUser" type="button">
+        <i class="fas fa-user-plus"></i>
+        </button>
+        <span id="readMore">
+            <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
+                <h6>...Mostrar Menú</h6>
+              </button>
+        </span>
+        
+      </div>
+    </div>
+    <!-- Tablero -->
+    <div class="flex-row justify-content-center fila">
+      <button class="btn-outline-success m-0 my-2 my-sm-0 space btnFake" id="btnAñadirL" type="button">
+        <h7 class="m-0 p-0"><i class="fas fa-plus space"></i>Añadir Lista...</h7>
+      </button>
+      <div id="tarjeta"></div>
+    </div>
+    <!-- Vinculación Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+    <!--Vinculación archivos JS-->
+    <script src="./src/js/pruebas.js"></script>
+    <script src="./src/js/data.js"></script>
+  </body>
 </html>
+
