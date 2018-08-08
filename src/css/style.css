@@ -18,7 +18,7 @@
   font-size: 15px;
   font-family: Helvetica;
   padding: none;
-  
+  margin-right: 1px;
 }
 .btnTablero:hover{
   background-color: rgba(0,0,0,.3);
@@ -27,12 +27,10 @@
 .btn{
   background-color: #4D95BF;
   color: #ffffff;
-  border: 0;
-  height: 30px;
+  border: 0; 
   vertical-align: middle;
   text-align: center;
   padding: none;
-  left: 2%;
   margin: 2px;
 }
 
@@ -161,7 +159,6 @@ h5{
   cursor: pointer;
   font-size: 13px;
   border:0;
-  margin-left: 1% !important;
   cursor: pointer;
   vertical-align: middle;
 }
@@ -172,6 +169,7 @@ h5{
 }
 
 .btnMedioTablero{
+  margin-top: auto !important;
   margin-right: 0%;
   background-color: #0079BF;
   color:   white;
@@ -207,10 +205,10 @@ h6{
     cursor: pointer;
     align-items: center;
     padding: .375rem .75rem;
-    height: 30px;
     vertical-align: middle;
     text-align: center;
     display: flex;
+    margin-left: 2px;
   }
 
   .search{
@@ -223,7 +221,6 @@ h6{
     cursor: pointer;
     align-items: center;
     padding: .375rem .75rem;
-    height: 30px;
     vertical-align: middle;
     text-align: center;
     
@@ -301,11 +298,24 @@ h6{
   left: 20%;
 }
 #estrella{
+  margin-right: 0%;
+  background-color: #0079BF;
+  color:   white;
+  cursor: pointer;
+  font-size: 10px !important;
+  float: right;
+  padding-right: 19%;
+  margin-left: 1% !important;
+  vertical-align: middle !important;
+  border:0;
   display: inline-block;
-  top:2%;
+  bottom: 1px;
   font-size: 110%;
 }
-
+#personal{
+  position: relative;
+  top:10px;
+}
 .fa-lock{
   font-size: 70%;
 }
