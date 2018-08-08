@@ -12,20 +12,31 @@
   display: inline;
 }
 .btnTablero{
-  background-color: #969EBD;
+  background-color: #4D95BF;
   color: #ffffff;
   border: 0;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-family: Helvetica;
+  padding: none;
+  
 }
 .btnTablero:hover{
-  background-color:#ffffff;
-  color: #969EBD;
+  background-color: rgba(0,0,0,.3);
+  color: white;
 }
 .btn{
-  background-color: #0067A3;
+  background-color: #4D95BF;
   color: #ffffff;
   border: 0;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  padding: none;
+  left: 2%;
+}
+
+#bell{
+  background-color:#EB5A46;
 }
 .btnForm{
   margin-top: 2%;
@@ -39,8 +50,7 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  padding: .375rem .75rem;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -49,18 +59,18 @@ body{
   background-color: #0079BF;
 }
 btnLeft{
-  text-align: left;
-  background-color: #0067A3;
+  background-color:#4D95BF;
   color: #ffffff;
   border: 0;
-  margin: 1px;
-  width: 5%;
   padding: 0;
+  vertical-align: middle;
+  font-size: 14px;
+  float: right;
 }
 
 .btnLeft:hover{
-  background-color:#ffffff;
-  color: #969EBD;
+  background-color: rgba(0,0,0,.3);
+  color: white;
 }
 
 .txtTrello{
@@ -78,21 +88,42 @@ btnLeft{
 h5{
   
   text-align: center;
-  color: #1A231C;
+  color: white;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   top: 3px;
 }
 
 .col{
-  text-align: left;
+  text-align: center;
   /*border: #333333 solid 2px;*/
   
   margin: 0%;
   padding: 0%;
 }
+
+#iconsLeft{
+  float: right;
+  position: absolute;
+  left: 100%; 
+  display: inline;
+  padding-left: 95%;
+}
+
+#headIcons{
+  float: right;
+  right: 0%; 
+  display: inline;
+  position: relative;
+  display: flex;
+}
+
 #logo{
-  width: 70%;
+  text-align: center;
+  height: 30px;
+  opacity: 0.5;
+  padding-left: 50%;
 }
 .fila{
   margin-left: 8px;
@@ -110,32 +141,37 @@ h5{
   text-align: right;
   vertical-align: middle;
   background-color:  #E2E4E6;
-  color:   #969EBD;
+  color:   #999999;
   cursor: pointer;
   border: none;
 }
 .btnFake{
-  width: 20%;
+  width: 18%;
+  padding: 0.7%;
   text-align: left;
   background-color: #0067A3;
   color:   white;
   cursor: pointer;
+  font-size: 13px;
+  border:0;
 }
 .btnFake:hover{
-  background-color: white ;
-  color: #147AA7;
+  background-color: rgba(0,0,0,.3);
+  color: white;
   border-radius: 5px;
 }
 
 .btnMedioTablero{
+  margin-right: 0%;
   background-color: #0079BF;
-  color:   #1A231C;
+  color:   white;
   cursor: pointer;
+  font-size: 14px;
 }
 .btnMedioTablero:hover{
-  background-color: #AFA9AF;
+  background-color: rgba(0,0,0,.3);
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
   .celda{
@@ -144,9 +180,23 @@ h5{
     cursor: pointer;
   }
 
+  #inputBuscar{
+    background-color: #4D95BF;
+    color:  white;
+    border-color: white;
+    border-style: none;
+    cursor: pointer;
+    align-items: center;
+    padding: .375rem .75rem;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+  }
+
   .search{
-    background-color: white;
-    color:  #969EBD;
+    background-color: #4D95BF;
+    color:  white;
     border-color: white;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
@@ -154,36 +204,46 @@ h5{
     cursor: pointer;
     align-items: center;
     padding: .375rem .75rem;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    
   }
 
- #user{
-  text-align: center;
-  border-radius: 50%;
-  background-color: white;
-  width: 20px;
-  height: 30px;
-  }
   #btnUser{
-    background-color: white;
-    color:  #969EBD;
+    background-color: #4DA1D2;
+    color:  white;
     cursor: pointer;
     border-radius: 50%;
+    border: none;
+    width: 8%;
+    height: 50%;
+    font-size: 10px;
+    align-items: center;
   }
   #btnUser:hover{
-    background-color: white;
-    color:  #147AA7;
+    background-color: rgba(0,0,0,.3);
+    color:  white;
     border-radius: 50%;
   }
 
  .card{
     float:left;
-    width: 20%;
+    width: 18%;
     background-color: #E2E4E6;
     border: 5px solid #E2E4E6;
+    margin-left: 0.4%;
+    font-family: 12%;
   }
 
   #tarjetaNew{
     background-color: #E2E4E6;
+  }
+
+  .tarea{
+    background-color:#ffffff;
+    border-radius: 4px;
+    padding: 0.7%;
   }
 
   .btnCard{
@@ -192,8 +252,8 @@ h5{
   cursor: pointer;
 }
 .btnCard:hover{
-  background-color: white ;
-  color: #147AA7;
+  background-color: rgba(0,0,0,.3);
+  color: white;
   border-radius: 5px;
 }
 .inputCard{

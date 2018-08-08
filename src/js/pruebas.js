@@ -78,7 +78,7 @@ const getInfoCards = () => {
 const newCards = (name) => {
   const newCard = document.getElementById(cardsId);
   const titleCard=document.getElementById(inputCardId);
-  newCard.innerHTML += `<div><p>${name}</p></div>`;
+  newCard.innerHTML += `<div><p class="tarea">${name}</p></div>`;
   titleCard.value="";
   titleCard.focus();
 }
