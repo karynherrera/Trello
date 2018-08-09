@@ -22,63 +22,66 @@
   </head>
   <body>
     <!--Barra de navegación principal-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="navPrincipal">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0">
-          <div class="row justify-content-center">
-            <div class=" col col-12 d-flex">
-              <button class="btn btn-outline-success my-2 my-sm-0 space btnTablero" type="button">
-              <i class="fab fa-trello space"></i> Tableros</button>
-              <div class="input-group">
-                <span id="headIcons">
-                <input id="inputBuscar" type="text" class="form-control" aria-describedby="basic-addon2">
-                <span class=" input-group-append search">
-                <i class="fas fa-search"></i>
-                </span>
-              </div>
-              </span>
-              <img src="./src/img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
-              <span class="d-flex" id="iconsLeft">
-              <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button">
-              <i class="fas fa-plus"></i>
-              </button>
-              <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button">
-              <i class="fas fa-exclamation-circle"></i>
-              </button>
-              <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button" id="bell">
-              <i class="far fa-bell"></i>
-              </button>
-              </span> 
-            </div>
-          </div>
+    <div class="row justify-content-center d-flex" id="navPrincipal">
+      <div class=" col col-12 d-flex">
+          <div class=" col  d-flex">
+        <button class="btn btn-outline-success my-2 my-sm-0  ml-4 mr-1 btnTablero" type="button">
+        <i class="fab fa-trello space"></i id="tableros"> Tableros</button>
+        <div class="input-group">
+          <span id="headIcons">
+          <input id="inputBuscar" type="text" class="form-control my-2 my-sm-0" aria-describedby="basic-addon2">
+          <span class=" input-group-append search">
+          <i class="fas fa-search"></i>
+        </div>
       </div>
-      </form>
+      <div class=" col col-2 d-flex justify-content-center">
+        <img src="./src/img/logo.png" id="logo" class="img-fluid" alt="Responsive image">
       </div>
-    </nav>
+        <div class=" col  d-flex justify-content-left">
+          <span class="d-flex" id="iconsLeft">
+          <button class=" btn btn-outline-success my-2 my-sm-0 btnLeft" type="button">
+          <i class="fas fa-plus"></i>
+          </button>
+          <button class=" btn btn-outline-success my-2 my-sm-0 btnLeft" type="button">
+          <i class="fas fa-exclamation-circle"></i>
+          </button>
+          <button class="btn btn-outline-success my-2 my-sm-0 space btnLeft" type="button" id="bell">
+          <i class="far fa-bell"></i>
+          </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    </div>
     <!-- Nombre del Tablero -->
-    <div class="row justify-content-center fila">
+    <div class="row justify-content-center fila ">
       <div class=" col col-12  d-flex">
-        <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
-          <h5>Tablero-Reto del Codigo</h5>
+        <div class=" col col-2  d-flex mr-0 pr-0">
+        <button class="btn btn-outline-success  m-0 p-0 my-2 my-sm-0  my-sm-0  ml-4 mr-1 space btnNameTab" type="button">
+          <p id="nameTab">Tablero-Reto del Codigo</p>
         </button>
-
-        <button id="estrella"class="btn-outline-success m-0 p-0 my-2 my-sm-0 space" type="button">
+      </div>
+        <div class=" col  d-flex">
+        <button id="estrella"class="btn-outline-success p-0" type="button">
         <i class="far fa-star" ></i>
         </button>
-        <button class="btn btn-outline-success  p-0 my-sm-0  m-2 space btnMedioTablero" id="pesonal" type="button">
-          <h6>Personal</h6>
+        <div class="divisor ml-2 mt-2 mb-1">|</div>
+        <button class="btn btn-outline-success  p-0 my-sm-0  m-2 space btnMedioTablero" type="button">
+          <p>Personal</p>
         </button>
-        <button class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
-          <h6><i class="fas fa-lock"></i> Privado</h6>
+        <div class="divisor ml-2 mt-2 mb-1">|</div>
+        <button class="btn btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
+          <p><i class="fas fa-lock"></i> Privado</p>
         </button>
-        <button class="btn-outline-success my-2 my-sm-0 space" id="btnUser" type="button">
-        <i class="fas fa-user-plus"></i>
+        <button class="btn btn-outline-success my-1 my-sm-0 ml-3" id="btnUser" type="button">
+        <i class="fas fa-user-plus" id="user"></i>
         </button>
-          <div id="readMore">
-            <button  class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
-              <h6>...Mostrar Menú</h6>
-            </button>
-          </div>
+        </div>
+        <div class=" col col-1 d-flex" id="readMore">
+                <button  class="btn btn-outline-success m-0 p-0 my-2 my-sm-0 space btnMedioTablero" type="button">
+                  <p id="more">...Mostrar Menú</p>
+                </button>
+        </div>
       </div>
     </div>
     <!-- Tablero -->
