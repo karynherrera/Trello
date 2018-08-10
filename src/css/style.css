@@ -47,9 +47,10 @@
   margin-top: 2%;
   margin-right: 0;
   background-color:#5AAC44;
-  padding: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
   color: #ffffff;
   border: 0;
   display: inline-block;
@@ -325,7 +326,8 @@ btnLeft{
 
   .btnCard{
   background-color: #E2E4E6;
-  color: #147AA7;
+  color: #999999;
+  font-size: 14px !important;
   cursor: pointer;
 }
 .btnCard:hover{
@@ -410,9 +412,17 @@ btnLeft{
 .rowMidle{
   display: none;
 }
+.filaResponsive{
+  display: none;
+}
+#colResponsive{
+  display: none;
+}
 
 @media (max-width: 900px){
-  
+  .filaResponsive{
+    display: none;
+  }
   #inputBuscar{
     display: none;
   }
@@ -447,6 +457,7 @@ btnLeft{
     height: 50px;
     padding: 0 !important;
     margin: 0 !important;
+    padding-left: 5px!important;
   }
   #inputBuscar{
     display: none;
@@ -473,7 +484,13 @@ btnLeft{
   }
   .col{
     display: -ms-flexbox !important;
-    padding: 0;
+    padding: 0!important;
+    margin: 0!important;
+  }
+  .logo{
+    width: 35%!important;
+    position: relative;
+    left: 25px;
   }
   #btnTableroM{
     display: none;
@@ -484,6 +501,7 @@ btnLeft{
   #btnMenu{
     display: inline;
     margin-left: 0 !important;
+    padding-left: 5%;
   }
   .input-group{
     display: none;
@@ -510,16 +528,19 @@ btnLeft{
     left: 1px;
     position: relative;
     top:0;
-    margin-left: 5% !important;
+    margin-left: 25% !important;
+    
     height: 50px;
     width: 10px;
   }
   #logo{
     text-align: center;
-    height: 20px;
+    height: 25px;
+    width: 100%;
     position: relative;
     top:15px;
     opacity: 0.5;
+    padding-left: 5%;
     /*padding-left: 400px;*/
   }
   #rowMidle{
@@ -535,5 +556,11 @@ btnLeft{
     position: relative;
     top:20px ;
     left: 125px;
+  }
+  .filaResponsive{
+    display: block;
+  }
+  #colResponsive{
+    display: block !important;
   }
 }
