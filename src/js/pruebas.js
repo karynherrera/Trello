@@ -9,6 +9,7 @@ btnAñadirLista.addEventListener('click', () => {
   showList();
 });
 
+//showList() pinta el formulario para agregar una nueva lista
 const showList=()=>{
   //divLista.style.display="none";
   countList=countList+1;
@@ -43,6 +44,7 @@ const activate=()=>{
   btnListaId.disabled=false;
 }
 
+// getInfoList() verifica si esta algun campo vacio, sino, llama a la sig funcion
 const getInfoList = (idLista) => {
   const cardVacia = document.getElementById(IdCard);
   cardVacia.style.display="none";
@@ -56,8 +58,8 @@ const getInfoList = (idLista) => {
   }
 }
 
+//la funcion card() pinta el form para agregar una tarea
 const card = (arrayList) => {
-
   console.log(arrayList.name);
   nameLista=arrayList.name;
   idLista=arrayList.id;
@@ -80,7 +82,6 @@ const createCard = (idLista) => {
   divCard.innerHTML = `<textarea class="inputCard" id="${inputCardId}" placeholder="Titulo de la Tarjeta..." onclick="activar()" autofocus="autofocus"></textarea>
   <button id="${btnAddCardId}" type="button" class=" btn-primary btnForm" onclick="getInfoCards(idLista)">Añadir Tarjeta</button><button id="${btnCerrar}" type="button" onclick="close()" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   `;
-  
 }
 
 const activar=()=>{
@@ -98,7 +99,8 @@ const getInfoCards = (idList) => {
   }
 };
 
-const newCards = (name) => {
+const newCards = (idList,name) => {
+  const listaReference = document.getElementById(IdCard);
   const newCard = document.getElementById(cardsId);
   const titleCard=document.getElementById(inputCardId);
   newCard.innerHTML += `<div><p class="tarea">${name}</p></div>`;

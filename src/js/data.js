@@ -1,6 +1,6 @@
 let arrayLista = [];
 
-
+// agrega a un arreglo de objetos los datos de la lista 
 const addToList = (idlist, nameList) => {
   let lista = new Object();
   lista.id = idlist;
@@ -24,18 +24,19 @@ const addToCards = (idList,nameCard) => {
   let found = arrayLista.find(item => {
     if (item.id === idList) {
       item.tareas.push(nameCard);
+      newCards(idList,nameCard)
       return result = true;
     } else {
       return result = false;
     } 
   });
-  if(result){
+  //if(result){
     //console.log("item.id "+item.id+" idList "+idList);
   //nameList.tareas.push(nameCard);
-  arrayCards.push(nameCard);
-  console.log(arrayLista);
-  return (newCards(nameCard));
-  }
+  //arrayCards.push(nameCard);
+  //console.log(arrayLista);
+  //return (newCards(idList,nameCard));
+  //}
   
   
 };
