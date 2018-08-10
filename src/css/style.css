@@ -47,6 +47,9 @@
   margin-top: 2%;
   margin-right: 0;
   background-color:#5AAC44;
+  padding: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   color: #ffffff;
   border: 0;
   display: inline-block;
@@ -135,6 +138,7 @@ btnLeft{
   float: left;
   vertical-align: middle;
   /*border: #333333 solid 2px;*/
+  
   margin: 0;
   padding: 0;
   margin-left: 5px;
@@ -271,7 +275,10 @@ btnLeft{
     vertical-align: middle;
     text-align: center; 
   }
-
+  #btnMenu{
+    display: none;
+  }
+  
   #btnUser{
     text-align: center;
     background-color: #4DA1D2;
@@ -303,6 +310,7 @@ btnLeft{
     border: 5px solid #E2E4E6;
     margin-left: 0.4%;
     font-family: 12%;
+    margin-top: 0.4%;
   }
 
   #tarjetaNew{
@@ -393,4 +401,139 @@ btnLeft{
   color: white;
   opacity: 0.3;
   /*border-left: #E2E4E6 0.5px solid;*/
+}
+
+#iconSearch{
+  display: none;
+  
+}
+.rowMidle{
+  display: none;
+}
+
+@media (max-width: 900px){
+  
+  #inputBuscar{
+    display: none;
+  }
+
+  #btnTableroM{
+    display: block;
+  }
+
+  #iconSearch{
+    display: block;
+  }
+
+  .input-group{
+    display: none;
+  }
+
+  #iconsLeft{
+    padding-left: 60%;
+  }
+  .col{
+    display: -ms-flexbox !important;
+  }
+  #iconsLeft{
+    float: right;
+    text-align: left;
+    padding-left: 77%;
+  }
+}
+
+@media (max-width: 600px){
+  #navPrincipal{
+    height: 50px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #inputBuscar{
+    display: none;
+  }
+  .btnNameTab{
+    display: block;
+    float: left;
+  }
+  .input-group{
+    display: none;
+  }
+  #iconSearch{
+    display: inline;
+    padding: none;
+    margin-left: 2px;
+    margin-left: 0 !important;
+  }
+  .btnFake{
+    width: 95%;
+  }
+  .card{
+    width: 95%;
+    
+  }
+  .col{
+    display: -ms-flexbox !important;
+    padding: 0;
+  }
+  #btnTableroM{
+    display: none;
+    margin: 1px;
+    padding: none;
+  margin-left: 2px;
+  }
+  #btnMenu{
+    display: inline;
+    margin-left: 0 !important;
+  }
+  .input-group{
+    display: none;
+  }
+  
+  .row{
+    display: -ms-flexbox !important;
+    margin: none;
+    height: 50px;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+  }
+  .filaW{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+    display: -ms-flexbox !important;
+    display: none;
+  }
+  #iconsLeft{
+    text-align: left;
+    padding:0;
+    left: 1px;
+    position: relative;
+    top:0;
+    margin-left: 5% !important;
+    height: 50px;
+    width: 10px;
+  }
+  #logo{
+    text-align: center;
+    height: 20px;
+    position: relative;
+    top:15px;
+    opacity: 0.5;
+    /*padding-left: 400px;*/
+  }
+  #rowMidle{
+    position: fixed;
+    top: 50px;
+   left:-10px !important;
+  }
+  
+  .midle{
+    display: none !important;
+  }
+  #readMore{
+    position: relative;
+    top:20px ;
+    left: 125px;
+  }
 }
