@@ -74,7 +74,6 @@ const card = (arrayList) => {
 }
 
 const createCard = (idLista) => {
-  console.log("holi entré a create card");
   inputCardId = "inputCard"+countCard;
   btnAddCardId = "btnAddCard"+countCard;
   btnCerrar = "btnCloseCard"+countCard;
@@ -82,6 +81,7 @@ const createCard = (idLista) => {
   divCard.innerHTML = `<textarea class="inputCard" id="${inputCardId}" placeholder="Titulo de la Tarjeta..." onclick="activar()" autofocus="autofocus"></textarea>
   <button id="${btnAddCardId}" type="button" class=" btn-primary btnForm" onclick="getInfoCards(idLista)">Añadir Tarjeta</button><button id="${btnCerrar}" type="button" onclick="close()" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   `;
+  console.log>(this.id);
 }
 
 const activar=()=>{
@@ -100,12 +100,15 @@ const getInfoCards = (idList) => {
 };
 
 const newCards = (idList,name) => {
+  const cardVacia = document.getElementById(addCardId);
+  cardVacia.innerHTML=`<button id="${plusCard}" class="btnForm btn-outline-success m-0 p-0 my-2 my-sm-0 btnCard"  type="button"  onclick="createCard(idLista)">
+  <h6 class="m-0 p-0"><i class="fas fa-plus space"></i>Añadir Tarjeta...</h6>
+</button>`;
   const listaReference = document.getElementById(IdCard);
   const newCard = document.getElementById(cardsId);
   const titleCard=document.getElementById(inputCardId);
   newCard.innerHTML += `<div><p class="tarea">${name}</p></div>`;
-  titleCard.value="";
-  titleCard.focus();
+  
 }
 
 
