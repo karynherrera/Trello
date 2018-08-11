@@ -11,7 +11,7 @@ const addToList = (idlist, nameList) => {
   let i = arrayLista.findIndex(e=>e.id===idlist);
   let arrListas = arrayLista[i];
   console.log(arrListas);
-  return (card(arrListas));
+  return (card(arrListas,idlist));
   /*
   arrayTareas.push(nameList);
   console.log(arrayTareas);
