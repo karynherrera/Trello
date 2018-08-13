@@ -7,10 +7,10 @@ const addToList = (idlist, nameList) => {
   lista.name = nameList;
   lista.tareas = [];
   arrayLista.push(lista);
-  console.log(arrayLista);
+  //console.log(arrayLista);
   let i = arrayLista.findIndex(e => e.id === idlist);
   let arrListas = arrayLista[i];
-  console.log(arrListas);
+  //console.log(arrListas);
   return (card(arrListas, idlist));
   /*
   arrayTareas.push(nameList);
@@ -19,38 +19,39 @@ const addToList = (idlist, nameList) => {
 };
 
 const addToCards = (idList, nameCard, idNewCard, idNewTarea, idBtnTarea) => {
-  console.log(idList);
-  console.log(idNewCard);
-  console.log(idNewTarea);
+  //console.log(idList);
+  //console.log(idNewCard);
+  //console.log(idNewTarea);
   let result;
 
   let found = arrayLista.find(item => {
     if (item.id === idList) {
-      /*let datos = new Object();
-      datos.name = nameCard;
-      datos.cardId = idNewCard;
-      datos.tareaId = idNewTarea;
-      datos.btnId = idBtnTarea;*/
-      item.tareas.push({
-        name: nameCard,
-        cardId: idNewCard,
-        tareaId: idNewTarea,
-        btnId: idBtnTarea,
-      });
-      newCards(idList, nameCard)
+      if(idNewCard === undefined){
+        item.tareas.push({
+          name: nameCard,
+          cardId: idNewCard,
+          tareaId: idNewTarea,
+          btnId: idBtnTarea,
+        });
+        //newCards(idList, idNewCard, nameCard)
+      }else{
+        let i=idNewTarea.charAt(idNewTarea.length-1);
+        let newCardId = "tarjetaNew"+i;
+       // console.log(newCardId);
+        item.tareas.push({
+          name: nameCard,
+          cardId: newCardId,
+          tareaId: idNewTarea,
+          btnId: idBtnTarea,
+        });
+        //newCards(idList, newCardId, nameCard)
+      }
+      //console.log("idList "+idList);
+      repaintAll(arrayLista);
       return result = true;
     } else {
       return result = false;
     }
   });
-  console.log(arrayLista);
-  //if(result){
-  //console.log("item.id "+item.id+" idList "+idList);
-  //nameList.tareas.push(nameCard);
-  //arrayCards.push(nameCard);
   //console.log(arrayLista);
-  //return (newCards(idList,nameCard));
-  //}
-
-
 };
