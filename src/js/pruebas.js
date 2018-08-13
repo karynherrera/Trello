@@ -63,52 +63,54 @@ const card = (arrayList, idlist) => {
   console.log(arrayList.name);
   nameLista = arrayList.name;
   idLista = arrayList.id;
-  console.log("idLista sacado del array " + idLista);
-  console.log("idLista traido d ela funcion " + idlist);
+ // console.log("idLista sacado del array " + idLista);
+ // console.log("idLista traido dela funcion " + idlist);
   countCard = countCard + 1;
   tarjetaNewId = "tarjetaNew" + countCard;
   addCardId = "addCard" + countCard;
   cardsId = "cards" + countCard;
   plusCard = "agregarCard" + countCard;
-  divLista.innerHTML += `<div class="card"><div class="form-group" id="${tarjetaNewId}"><strong><p>${nameLista}</p></strong><div id="${cardsId}"></div><div id="${addCardId}"><button id="${plusCard}" class="btnForm btn-outline-success m-0 p-0 my-2 my-sm-0 space btnCard"  type="button"  onclick="currentData(idLista,cardsId,this.id)">
+  divLista.innerHTML += `<div class="card"><div class="form-group" id="${tarjetaNewId}"><strong><p>${nameLista}</p></strong><div id="${cardsId}"></div><div id="${addCardId}"><button id="${plusCard}" class="btnForm btn-outline-success m-0 p-0 my-2 my-sm-0 space btnCard"  type="button"  onclick="currentData(idLista,tarjetaNewId,cardsId,this.id)">
   <h6 class="m-0 p-0"><i class="fas fa-plus space"></i>Añadir Tarjeta...</h6>
 </button></div></div></div>`;
+let idNewCard = document.getElementById(tarjetaNewId);
+let idNewTarea = document.getElementById(cardsId);
+let idBtnTarea = document.getElementById(plusCard);
 }
 
-const currentData = (idLista,cardsId,idBtn) => {
-  console.log(idLista);
-    console.log(cardsId);
-    console.log(idBtn);
+const currentData = (idLista,idNewCard,idNewTarea,idBtnTarea) => {
+  console.log("ids actuales "+idLista,idNewCard,idNewTarea,idBtnTarea);
     let btn,idCurrentList;
-    btn=idBtn.charAt(idBtn.length-1);
-    addCardId = "addCard"+btn;
-    createCard(idLista);
+    //btn=idBtn.charAt(idBtn.length-1);
+    //addCardId = "addCard"+btn;
+    createCard(idLista,idNewCard,idNewTarea,idBtnTarea);
   }
 
-  const createCard = (idLista) => {
-    console.log(idLista);
+  const createCard = (idLista,idNewCard,idNewTarea,idBtnTarea) => {
+    console.log("ids en createcard "+idLista,idNewCard,idNewTarea,idBtnTarea);
     inputCardId = "inputCard" + countCard;
     btnAddCardId = "btnAddCard" + countCard;
     btnCerrar = "btnCloseCard" + countCard;
     const divCard = document.getElementById(addCardId);
     divCard.innerHTML = `<textarea class="inputCard" id="${inputCardId}" placeholder="Titulo de la Tarjeta..." onclick="activar()" autofocus="autofocus"></textarea>
-  <button id="${btnAddCardId}" type="button" class=" btn-primary btnForm" onclick="getInfoCards(idLista)">Añadir Tarjeta</button><button id="${btnCerrar}" type="button" onclick="close()" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
+  <button id="${btnAddCardId}" type="button" class=" btn-primary btnForm" onclick="getInfoCards('${idLista}','${idNewCard}','${addCardId}','${btnAddCardId}')">Añadir Tarjeta</button><button id="${btnCerrar}" type="button" onclick="close()" class="btnCerrar btn-primary"><i class="fas fa-times"></i></button>
   `;
-
+  
   }
 
   const activar = () => {
     btnAddCardId.disabled = false;
   }
 
-  const getInfoCards = (idList) => {
+  const getInfoCards = (idLista,idNewCard,idNewTarea,idBtnTarea) => {
+    console.log("ids actuales en getinfocards "+idLista,idNewCard,idNewTarea,idBtnTarea);
     let inputCard = document.getElementById(inputCardId);
     if (inputCard.value === "") {
       btnAddCardId.disabled = true;
       inputCard.focus();
     } else {
       btnAddCardId.disabled = false;
-      addToCards(idList, inputCard.value);
+      addToCards(idLista,inputCard.value,idNewCard,idNewTarea,idBtnTarea);
     }
   };
 
@@ -124,7 +126,7 @@ const currentData = (idLista,cardsId,idBtn) => {
 
   }
 
-
+  
   const close = () => {
     console.log("holi");
     //const newCard = document.getElementById("IdCard");
